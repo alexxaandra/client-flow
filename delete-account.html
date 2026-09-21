@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ClientFlow — Διαγραφή Λογαριασμού</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --accent: #6B3FD4;
+      --accent-light: #ede9ff;
+      --text-primary: #0f0a1e;
+      --text-secondary: #4b4468;
+      --text-muted: #9490a8;
+      --bg: #faf9ff;
+      --border: #ede9ff;
+    }
+    body { font-family: 'Inter', system-ui, sans-serif; background: var(--bg); color: var(--text-primary); line-height: 1.7; min-height: 100vh; }
+    header { background: #fff; border-bottom: 1px solid var(--border); padding: 18px 24px; display: flex; align-items: center; gap: 12px; }
+    .logo-pill { background: var(--accent); color: #fff; font-size: 11px; font-weight: 700; padding: 4px 10px; border-radius: 100px; }
+    header h1 { font-size: 13px; font-weight: 600; color: var(--text-secondary); }
+    .hero { background: linear-gradient(135deg, #e53e3e 0%, #9B6DFF 100%); padding: 64px 24px 48px; text-align: center; color: #fff; }
+    .hero-app { font-size: 36px; font-weight: 900; letter-spacing: -1px; margin-bottom: 8px; }
+    .hero-sub { font-size: 14px; opacity: 0.8; }
+    main { max-width: 680px; margin: 0 auto; padding: 48px 24px 80px; }
+    .card { background: #fff; border: 1px solid var(--border); border-radius: 16px; padding: 32px; margin-bottom: 24px; }
+    .card h2 { font-size: 16px; font-weight: 700; color: var(--text-primary); margin-bottom: 16px; }
+    .card p { font-size: 14px; color: var(--text-secondary); margin-bottom: 12px; }
+    .steps { list-style: none; counter-reset: steps; }
+    .steps li { counter-increment: steps; display: flex; gap: 16px; align-items: flex-start; padding: 14px 0; border-bottom: 1px solid var(--border); font-size: 14px; color: var(--text-secondary); }
+    .steps li:last-child { border-bottom: none; }
+    .steps li::before { content: counter(steps); background: var(--accent); color: #fff; width: 26px; height: 26px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; flex-shrink: 0; }
+    .email-card { background: var(--accent-light); border: 1px solid var(--border); border-radius: 12px; padding: 20px 24px; margin-top: 8px; }
+    .email-card a { color: var(--accent); font-weight: 700; text-decoration: none; font-size: 15px; }
+    .data-list { list-style: none; }
+    .data-list li { font-size: 14px; color: var(--text-secondary); padding: 8px 0; border-bottom: 1px solid var(--border); display: flex; gap: 10px; }
+    .data-list li:last-child { border-bottom: none; }
+    .tag { font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 100px; }
+    .tag-deleted { background: #fee2e2; color: #e53e3e; }
+    .tag-kept { background: #fef9c3; color: #854d0e; }
+    footer { text-align: center; padding: 32px 24px; font-size: 12px; color: var(--text-muted); border-top: 1px solid var(--border); }
+    footer strong { color: var(--accent); }
+  </style>
+</head>
+<body>
+
+  <header>
+    <span class="logo-pill">ClientFlow</span>
+    <h1>Διαγραφή Λογαριασμού</h1>
+  </header>
+
+  <div class="hero">
+    <div class="hero-app">Διαγραφή Λογαριασμού</div>
+    <div class="hero-sub">ClientFlow — Διαχείριση Πελατών & Ραντεβού</div>
+  </div>
+
+  <main>
+
+    <div class="card">
+      <h2>Πώς να διαγράψετε τον λογαριασμό σας</h2>
+      <p>Μπορείτε να ζητήσετε τη διαγραφή του λογαριασμού σας και όλων των σχετικών δεδομένων ανά πάσα στιγμή αποστέλλοντας email στη διεύθυνση:</p>
+      <div class="email-card">
+        📧 <a href="mailto:alphadevs@hotmail.com">alphadevs@hotmail.com</a>
+      </div>
+      <br/>
+      <p>Με θέμα: <strong>«Αίτημα Διαγραφής Λογαριασμού»</strong> και αναφορά της διεύθυνσης email που χρησιμοποιείτε στην εφαρμογή.</p>
+    </div>
+
+    <div class="card">
+      <h2>Βήματα διαδικασίας</h2>
+      <ol class="steps">
+        <li>Στείλτε email στο alphadevs@hotmail.com με θέμα «Αίτημα Διαγραφής Λογαριασμού»</li>
+        <li>Αναφέρετε τη διεύθυνση email του λογαριασμού σας που θέλετε να διαγραφεί</li>
+        <li>Θα λάβετε επιβεβαίωση εντός 5 εργάσιμων ημερών</li>
+        <li>Η πλήρης διαγραφή ολοκληρώνεται εντός 30 ημερών</li>
+      </ol>
+    </div>
+
+    <div class="card">
+      <h2>Ποια δεδομένα διαγράφονται</h2>
+      <ul class="data-list">
+        <li><span class="tag tag-deleted">ΔΙΑΓΡΑΦΗ</span> Λογαριασμός Firebase Authentication (email, κωδικός)</li>
+        <li><span class="tag tag-deleted">ΔΙΑΓΡΑΦΗ</span> Όλα τα ραντεβού και εργασίες</li>
+        <li><span class="tag tag-deleted">ΔΙΑΓΡΑΦΗ</span> Στοιχεία πελατών (ονόματα, τηλέφωνα, διευθύνσεις)</li>
+        <li><span class="tag tag-deleted">ΔΙΑΓΡΑΦΗ</span> Προφίλ χρήστη (όνομα, επάγγελμα, ρυθμίσεις)</li>
+        <li><span class="tag tag-deleted">ΔΙΑΓΡΑΦΗ</span> Expo Push Token</li>
+        <li><span class="tag tag-kept">ΔΙΑΤΗΡΗΣΗ</span> Ανώνυμα αρχεία καταγραφής για 90 ημέρες (χωρίς προσωπικά στοιχεία)</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Μερική διαγραφή δεδομένων</h2>
+      <p>Εάν επιθυμείτε τη διαγραφή συγκεκριμένων δεδομένων χωρίς τη διαγραφή του λογαριασμού σας, επικοινωνήστε μαζί μας στο ίδιο email αναφέροντας ποια δεδομένα θέλετε να διαγραφούν.</p>
+    </div>
+
+  </main>
+
+  <footer>
+    <strong>ClientFlow</strong> &nbsp;·&nbsp; AlphaDevs &nbsp;·&nbsp; <a href="index.html" style="color:var(--accent);">Πολιτική Απορρήτου</a>
+  </footer>
+
+</body>
+</html>
