@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ClientFlow — Πολιτική Απορρήτου</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --accent: #6B3FD4;
+      --accent-light: #ede9ff;
+      --text-primary: #0f0a1e;
+      --text-secondary: #4b4468;
+      --text-muted: #9490a8;
+      --bg: #faf9ff;
+      --card: #ffffff;
+      --border: #ede9ff;
+      --radius: 16px;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text-primary);
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    /* Top bar */
+    header {
+      background: var(--card);
+      border-bottom: 1px solid var(--border);
+      padding: 18px 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo-pill {
+      background: var(--accent);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      padding: 4px 10px;
+      border-radius: 100px;
+    }
+
+    header h1 {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-secondary);
+    }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(135deg, #5600E9 0%, #9B6DFF 100%);
+      padding: 64px 24px 48px;
+      text-align: center;
+      color: #fff;
+    }
+
+    .hero-app {
+      font-size: 42px;
+      font-weight: 900;
+      letter-spacing: -1.5px;
+      margin-bottom: 8px;
+    }
+
+    .hero-sub {
+      font-size: 14px;
+      font-weight: 500;
+      opacity: 0.75;
+      margin-bottom: 20px;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 100px;
+      padding: 6px 16px;
+      font-size: 12px;
+      font-weight: 600;
+      backdrop-filter: blur(8px);
+    }
+
+    /* Content */
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    .updated {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-bottom: 40px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    /* Section */
+    .section {
+      margin-bottom: 36px;
+    }
+
+    .section-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .section-title::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    .section-text {
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.8;
+      white-space: pre-line;
+    }
+
+    /* Contact card */
+    .contact-card {
+      background: var(--accent-light);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      margin-top: 8px;
+    }
+
+    .contact-card a {
+      color: var(--accent);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .contact-card a:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      font-size: 12px;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border);
+    }
+
+    footer strong {
+      color: var(--accent);
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .hero-app { font-size: 32px; }
+      main { padding: 32px 16px 60px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <span class="logo-pill">ClientFlow</span>
+    <h1>Πολιτική Απορρήτου</h1>
+  </header>
+
+  <div class="hero">
+    <div class="hero-app">ClientFlow</div>
+    <div class="hero-sub">Διαχείριση Πελατών & Ραντεβού</div>
+    <span class="hero-badge">Πολιτική Απορρήτου</span>
+  </div>
+
+  <main>
+    <p class="updated">Τελευταία ενημέρωση: Σεπτέμβριος 2026 (v2) &nbsp;·&nbsp; AlphaDevs</p>
+
+    <div class="section">
+      <div class="section-title">1. Εισαγωγή</div>
+      <p class="section-text">Η εφαρμογή ClientFlow («εμείς», «η εφαρμογή») σέβεται την ιδιωτικότητά σας. Αυτή η πολιτική απορρήτου περιγράφει ποιες πληροφορίες συλλέγουμε, πώς τις χρησιμοποιούμε και πώς τις προστατεύουμε. Με τη χρήση της εφαρμογής αποδέχεστε τους όρους αυτής της πολιτικής.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-title">2. Πληροφορίες που συλλέγουμε</div>
+      <p class="section-text">• Διεύθυνση email για τη δημιουργία και διαχείριση του λογαριασμού σας
+• Επαγγελματικά δεδομένα που εισάγετε εσείς (ονόματα πελατών, αριθμοί τηλεφώνου, διευθύνσεις, ραντεβού, σημειώσεις)
+• Ρυθμίσεις εφαρμογής (θέμα, νόμισμα, προτιμήσεις)
+• Expo Push Token — ένα μοναδικό αναγνωριστικό συσκευής που χρησιμοποιείται αποκλειστικά για την αποστολή ειδοποιήσεων push. Δεν περιέχει προσωπικά στοιχεία.
+
+Δεν συλλέγουμε δεδομένα τοποθεσίας, επαφών τηλεφώνου, φωτογραφιών ή άλλων αρχείων χωρίς τη ρητή συγκατάθεσή σας. Δεν χρησιμοποιούμε cookies ή trackers τρίτων.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-title">3. Πώς χρησιμοποιούμε τα δεδομένα</div>
+      <p class="section-text">Τα δεδομένα σας χρησιμοποιούνται αποκλειστικά για:
+• Τη λειτουργία και βελτίωση της εφαρμογής
+• Τον συγχρονισμό των δεδομένων σας μεταξύ συσκευών μέσω Firebase
+• Την αποκατάσταση των δεδομένων σας σε νέα συσκευή
+
+Δεν πουλάμε, νοικιάζουμε ή μοιραζόμαστε τα δεδομένα σας με τρίτους για οποιονδήποτε σκοπό.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-title">4. Αποθήκευση δεδομένων</div>
+      <p class="section-text">Τα δεδομένα σας αποθηκεύονται:
+• Τοπικά στη συσκευή σας για άμεση πρόσβαση χωρίς σύνδεση
+• Κρυπτογραφημένα στο Firebase (Google Cloud Infrastructure) για συγχρονισμό και ασφαλή αντίγραφα
+
+Η πρόσβαση στα δεδομένα σας στο cloud είναι δυνατή μόνο από εσάς. Το Firebase συμμορφώνεται πλήρως με τα πρότυπα GDPR, ISO 27001 και SOC 2.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-title">5. Ασφάλεια</div>
+      <p class="section-text">• Οι κωδικοί πρόσβασης κρυπτογραφούνται από το Firebase Authentication — δεν τους βλέπουμε ποτέ
+• Κανείς άλλος χρήστης δεν έχει πρόσβαση στα δεδομένα σας
+• Όλες οι επικοινωνίες χρησιμοποιούν κρυπτογράφηση TLS/HTTPS
+• Οι κανόνες ασφαλείας Firestore επιτρέπουν πρόσβαση μόνο στον κάτοχο του λογαριασμού</p>
+    </div>
+
+    <div class="section">
+      <div class="section-title">6. Διαγραφή δεδομένων</div>
+      <p class="section-text">Μπορείτε να ζητήσετε τη διαγραφή του λογαριασμού σας και όλων των σχετικών δεδομένων ανά πάσα στιγμή.</p>
+      <div class="contact-card">
+        📧 <a href="mailto:alphadevs@hotmail.com">alphadevs@hotmail.com</a>
+        <br/><br/>
+        Η διαγραφή ολοκληρώνεται εντός 30 ημερών από το αίτημα. Μετά τη διαγραφή δεν διατηρούμε κανένα αντίγραφο των δεδομένων σας.
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">7. Δικαιώματα GDPR</div>
+      <p class="section-text">Ως κάτοικος της Ευρωπαϊκής Ένωσης έχετε τα εξής δικαιώματα:
+• Πρόσβαση στα δεδομένα που διατηρούμε για εσάς
+• Διόρθωση ανακριβών δεδομένων
+• Διαγραφή των δεδομένων σας («δικαίωμα στη λήθη»)
+• Φορητότητα δεδομένων — εξαγωγή σε JSON μέσω της εφαρμογής
+• Περιορισμός της επεξεργασίας
+• Εναντίωση στην επεξεργασία
+
+Για οποιοδήποτε αίτημα GDPR επικοινωνήστε στο: <a href="mailto:alphadevs@hotmail.com" style="color:var(--accent);font-weight:600;">alphadevs@hotmail.com</a></p>
+    </div>
+
+    <div class="section">
+      <div class="section-title">8. Ειδοποιήσεις Push</div>
+      <p class="section-text">Η εφαρμογή ενδέχεται να σας αποστέλλει ειδοποιήσεις push για ενημερώσεις, νέες λειτουργίες ή σημαντικές αλλαγές. Για τον σκοπό αυτό:
+• Αποθηκεύουμε το Expo Push Token της συσκευής σας στο Firebase
+• Δεν χρησιμοποιείται για διαφήμιση ή κοινοποίηση σε τρίτους
+• Μπορείτε να αποσύρετε τη συγκατάθεσή σας ανά πάσα στιγμή από τις ρυθμίσεις ειδοποιήσεων της συσκευής σας
+• Η απόσυρση συγκατάθεσης δεν επηρεάζει τη λειτουργία της εφαρμογής</p>
+    </div>
+
+    <div class="section">
+      <div class="section-title">9. Τρίτα μέρη</div>
+      <p class="section-text">Η εφαρμογή χρησιμοποιεί τις εξής υπηρεσίες τρίτων:
+• Firebase (Google) — αυθεντικοποίηση και αποθήκευση δεδομένων
+• Expo (Expo.dev) — υποδομή ειδοποιήσεων push. Το Expo λαμβάνει μόνο το Push Token για δρομολόγηση ειδοποιήσεων και δεν αποθηκεύει περιεχόμενο μηνυμάτων
+• Firebase Cloud Messaging (Google) — παράδοση ειδοποιήσεων σε Android συσκευές
+• OpenStreetMap / Nominatim — γεωκωδικοποίηση διευθύνσεων για τον χάρτη (αποστέλλονται μόνο διευθύνσεις, χωρίς προσωπικά στοιχεία)
+
+Όλες οι υπηρεσίες συμμορφώνονται με το GDPR.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-title">10. Αλλαγές στην πολιτική</div>
+      <p class="section-text">Ενδέχεται να ενημερώνουμε αυτή την πολιτική περιοδικά. Σημαντικές αλλαγές θα γνωστοποιούνται μέσω της εφαρμογής. Η ημερομηνία τελευταίας ενημέρωσης εμφανίζεται πάντα στην κορυφή αυτής της σελίδας. Η συνέχιση χρήσης της εφαρμογής μετά από αλλαγές συνιστά αποδοχή της νέας πολιτικής.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-title">11. Επικοινωνία</div>
+      <p class="section-text">Για ερωτήσεις, παράπονα ή αιτήματα σχετικά με την πολιτική απορρήτου:</p>
+      <div class="contact-card">
+        📧 <a href="mailto:alphadevs@hotmail.com">alphadevs@hotmail.com</a>
+        <br/><br/>
+        Απαντάμε εντός 5 εργάσιμων ημερών.
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <strong>ClientFlow</strong> &nbsp;·&nbsp; Αναπτύχθηκε από AlphaDevs &nbsp;·&nbsp; Σεπτέμβριος 2026
+  </footer>
+
+</body>
+</html>
